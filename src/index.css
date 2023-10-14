@@ -11,3 +11,25 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.default-input {
+  border-radius: 5px;
+  width: 100%;
+  min-height: 1.5rem;
+  border: none;
+  max-width: fit-content;
+  padding: 0 10px;
+}
+
+.default-label {
+  font-size: 18px;
+}
+
+.default-input-label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 8px;
+}

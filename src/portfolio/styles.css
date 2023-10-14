@@ -1,0 +1,42 @@
+.portfolio-div {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.portfolio-section {
+    background-color: #383b3f;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    width: 100%;
+    padding: 2rem 0 5rem 0;
+}
+
+.send-row-button {
+    width: fit-content;
+    background-color: rgb(128, 219, 255);
+    color:blue;
+    text-transform: uppercase;
+    font-size: small;
+    font-weight: 600;
+    border: none;
+    border-radius: 25px;
+    height: auto;
+    padding: 0.3rem 1.3rem;
+}
+
+.send-row-button:hover {
+    background-color: rgb(78, 180, 221);
+    cursor: pointer;
+}
+
+th, td {
+    font-size: x-large;
+    padding: 0.5rem;
+}
