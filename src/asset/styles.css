@@ -1,12 +1,13 @@
 .assets-section {
-    background-color: #282c34;
+    background-color: white;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: calc(10px + 2vmin);
-    color: white;
+    color: #383b3f;
+
     width: 100%;
     padding: 2rem 0 5rem 0;
 }
@@ -77,13 +78,13 @@
 .add-button {
     width: fit-content;
     background-color: transparent;
-    color:rgb(128, 219, 255);
+    color:blue;
     text-transform: uppercase;
     font-size: small;
     font-weight: 600;
     margin-top: 1rem;
     border: none;
-    border: 1px solid rgb(128, 219, 255);
+    border: 1px solid blue;
     border-radius: 25px;
     height: auto;
     padding: 0.5rem 1rem;

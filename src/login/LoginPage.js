@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import NavBar from '../header/NavBar';
 import { useAuth } from '../AuthContext';
 import './styles.css'
 
@@ -49,7 +50,10 @@ function LoginPage() {
   };
 
   return (
-    <div className='login-page'>
+      <>
+      <NavBar onlyTitle/>
+          <div className='login-page'>
+
       {error.isError && <alert>{error.errorMessage}</alert>}
       <h2>Login</h2>
       <form className='login-form'>
@@ -64,6 +68,7 @@ function LoginPage() {
         <button className='login-button' type="button" onClick={handleLogin}>ENTRAR</button>
       </form>
     </div>
+    </>
   );
 }
 

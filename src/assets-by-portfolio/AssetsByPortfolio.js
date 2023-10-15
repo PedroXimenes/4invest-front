@@ -4,7 +4,7 @@ import './styles.css'
 
 const base_url_prd = 'https://four-invest-portfolio-p3xh7jp6wa-uc.a.run.app'
 
-function Portfolio() {
+function AssetsByPortfolio() {
   const [portfolioId, setPortfolioId] = useState('');
   const [result, setResult] = useState(null);
 
@@ -26,7 +26,7 @@ function Portfolio() {
 
 
   return (
-    <div className='portfolio-section'>
+    <div className='portfolio-section' id='assets'>
       <h2>Ativos por carteira</h2>
       <div className='portfolio-div'>
         <label className='assets-label'>
@@ -65,4 +65,4 @@ function Portfolio() {
   );
 }
 
-export default Portfolio;
+export default AssetsByPortfolio;

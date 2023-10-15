@@ -1,26 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
-import Form from './form/Form';
-import UserIdSection from './user-id/UserIdSection'; 
+import NewPortfolio from './new-portfolio/NewPortfolio';
+import MyPortfolio from './my-portfolio/MyPortfolio'; 
 import Assets from './asset/Assets';
-import Portfolio from './portfolio/Portfolio';
+import AssetsByPortfolio from './assets-by-portfolio/AssetsByPortfolio';
+import Calculator from './calculator/Calculator'
+import NavBar from './header/NavBar';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-      <h1>4 Invest</h1>
-
-      <UserIdSection />
-      <Form />      
-      <Portfolio/>
+      <NavBar/>
+      <MyPortfolio />
+      <NewPortfolio />      
+      <AssetsByPortfolio/>
       <Assets />
-      </header>
-      
-
-
-    </div>
-    
+      <Calculator/>
+      </header>   
+    </div>    
   );
 }
 

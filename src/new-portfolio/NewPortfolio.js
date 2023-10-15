@@ -5,7 +5,7 @@ import { useAuth } from '../AuthContext';
 const base_url_prd = 'https://four-invest-portfolio-p3xh7jp6wa-uc.a.run.app'
 
 
-function Form() {
+function NewPortfolio() {
   const [name, setName] = useState('');
   const { isLoggedIn } = useAuth();
 
@@ -25,7 +25,7 @@ function Form() {
   };
 
   return (
-    <div className='check-page'>
+    <div className='check-page' id='new-portfolio'>
       <h2>Nova carteira</h2>
       <form className='check-form' onSubmit={handleSubmit}> 
         <div className='portfolio-div'>
@@ -40,4 +40,4 @@ function Form() {
   );
 }
 
-export default Form;
+export default NewPortfolio;

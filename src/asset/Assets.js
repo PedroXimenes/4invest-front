@@ -50,7 +50,7 @@ function Assets() {
   };
 
   return (
-    <div className='assets-section'>
+    <div className='assets-section' id='add-assets'>
       {result === 'success' && <alert className='success'>Ativos adicionados</alert>}
       {result === 'error' && <alert>Erro ao adicionar ativos</alert>}
       <h2>Adicionar novos ativos</h2>
@@ -75,15 +75,15 @@ function Assets() {
             </label>
             <label className='assets-label'>
               Quantidade:
-              <input className='default-input' type="text" value={asset.quantity} onChange={(e) => handleAssetChange(e, index, 'quantity')} />
+              <input className='default-input' type="number" value={asset.quantity} onChange={(e) => handleAssetChange(e, index, 'quantity')} />
             </label>
             <label className='assets-label'>
               Valor máximo:
-              <input className='default-input' type="text" value={asset.max_value_limit} onChange={(e) => handleAssetChange(e, index, 'max_value_limit')} />
+              <input className='default-input' type="number" value={asset.max_value_limit} onChange={(e) => handleAssetChange(e, index, 'max_value_limit')} />
             </label>
             <label className='assets-label'>
               Porcentagem ideal:
-              <input className='default-input' type="text" value={asset.ideal_percentage} onChange={(e) => handleAssetChange(e, index, 'ideal_percentage')} />
+              <input className='default-input' type="number" value={asset.ideal_percentage} onChange={(e) => handleAssetChange(e, index, 'ideal_percentage')} />
             </label>
           </form>
           <button className='remove-button' onClick={() => removeAsset(index)}>Remover</button>

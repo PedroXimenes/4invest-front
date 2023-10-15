@@ -1,24 +1,25 @@
-.user-id-div {
+.portfolio-div {
     display: flex;
     align-items: flex-end;
     justify-content: center;
     gap: 1rem;
 }
 
-.user-id-section {
-    background-color: #383b3f;
-
+.portfolio-section {
+    background-color: whitesmoke;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: calc(10px + 2vmin);
-    color: white;
+    color: #282c34;
+
     width: 100%;
     padding: 2rem 0 5rem 0;
 }
 
-.refresh-button {
+.send-row-button {
     width: fit-content;
     background-color: rgb(128, 219, 255);
     color:blue;
@@ -28,11 +29,10 @@
     border: none;
     border-radius: 25px;
     height: auto;
-    padding: 0.5rem 1.5rem;
-    margin-top: 1.5rem;
+    padding: 0.3rem 1.3rem;
 }
 
-.refresh-button:hover {
+.send-row-button:hover {
     background-color: rgb(78, 180, 221);
     cursor: pointer;
 }

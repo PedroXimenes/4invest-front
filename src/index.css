@@ -19,6 +19,7 @@ code {
   border: none;
   max-width: fit-content;
   padding: 0 10px;
+  border: 1px solid #282c34;
 }
 
 .default-label {

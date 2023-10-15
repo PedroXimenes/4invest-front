@@ -6,7 +6,7 @@ import { useAuth } from '../AuthContext';
 const base_url_dev = 'http://localhost:9000'
 const base_url_prd = 'https://four-invest-portfolio-p3xh7jp6wa-uc.a.run.app'
 
-function UserIdSection() {
+function MyPortfolio() {
   const [result, setResult] = useState(null);
   const { isLoggedIn } = useAuth();
 
@@ -25,7 +25,7 @@ const handlePortfolio= useCallback(() => {
 
 
   return (
-    <div className='user-id-section'>
+    <div className='user-id-section' id='portfolio'>
       <h2>Minhas carteiras</h2>
       {result && result.length > 0 && (
         <div>
@@ -54,4 +54,4 @@ const handlePortfolio= useCallback(() => {
   );
 }
 
-export default UserIdSection;
+export default MyPortfolio;
